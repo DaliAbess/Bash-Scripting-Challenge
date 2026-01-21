@@ -27,7 +27,7 @@ function create_backup {
 
 # Function to perform the rotation and keep only the last 3 backups
 function perform_rotation {
-    local backups=($(ls -t "${source_dir}/backup_"* 2>/dev/null))  # List existing backups sorted by timestamp
+    local backups=($(ls -t "${source_dir}/backup_"* 2>/dev/null | awk '{sub(/:$/, "", $0); print}' ))  # List existing backups sorted by timestamp
 
     # Check if there are more than 3 backups
     if [ "${#backups[@]}" -gt 3 ]; then
