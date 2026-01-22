@@ -40,4 +40,3 @@ Feel free to explore and research relevant commands and syntax while completing 
 
 ## You can also check out the [interactive monitoring Metrics script repository](./usr_interaction_with_metrics.md) to see the code in action.
 
->>This project is an excellent addition to your portfolio. I can't wait to see what creative names you've given to this script. 
