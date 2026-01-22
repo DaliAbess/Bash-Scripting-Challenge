@@ -30,7 +30,7 @@ Assume we have a script called `monitoring_script.sh` that implements the tasks 
    ```
    ---- System Metrics ----
 
-   CPU Usage:  8%   Mem Usage:  24%   Disk Space:  62%
+   "CPU Usage:  8%   Mem Usage:  24%   Disk Space:  62%"
 
    Press Enter to continue...
    ```
@@ -84,5 +84,6 @@ Assume we have a script called `monitoring_script.sh` that implements the tasks 
 ---
 
 Note: The above example assumes that the script is implemented according to the tasks mentioned in the challenge.
+
 
 
