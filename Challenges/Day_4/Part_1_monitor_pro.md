@@ -1,4 +1,4 @@
-# BashBlaze Scripting Challenge - Day 4
+# Bash Scripting Challenge - Day 4
 
 Welcome to the Bash Scripting Challenge - Day 4! This challenge is designed to test your Bash scripting skills and problem-solving abilities in the context of process monitoring and management.
 
@@ -57,3 +57,4 @@ file to see a sample interaction with the script, demonstrating its usage and be
 - If you encounter any issues or have questions, feel free to open an issue in this repository.
 
 Happy scripting and good luck with the challenge!
+
