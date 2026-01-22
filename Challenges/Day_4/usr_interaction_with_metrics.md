@@ -4,7 +4,7 @@
 
 Assume we have a script called `monitoring_script.sh` that implements the tasks mentioned in the challenge.
 
-1. **Launching the Script**
+**1.Launching the Script**
 
    Open a terminal and navigate to the directory where `monitoring_script.sh` is located. Execute the script using the following command:
 
@@ -12,7 +12,7 @@ Assume we have a script called `monitoring_script.sh` that implements the tasks 
    $ ./monitoring_script.sh
    ```
 
-2. **Main Menu**
+**2.Main Menu**
 
    Once the script starts, you'll see a simple menu displayed on the terminal:
 
@@ -23,8 +23,7 @@ Assume we have a script called `monitoring_script.sh` that implements the tasks 
    2. Monitor a Specific Service
    3. Exit
    ```
-
-3. **View System Metrics**
+**3.View System Metrics**
 
    If you choose option 1, the script will display the current system metrics, including CPU usage, memory usage, and disk space usage. The output might look like this:
 
@@ -38,7 +37,7 @@ Assume we have a script called `monitoring_script.sh` that implements the tasks 
 
    The script waits for a moment (based on the specified sleep interval) before displaying the metrics again.
 
-4. **Monitor a Specific Service**
+**4.Monitor a Specific Service**
 
    If you choose option 2, the script will prompt you to enter the name of the service you want to monitor. Let's say you want to monitor Nginx. Enter "nginx" when prompted:
 
@@ -70,11 +69,11 @@ Assume we have a script called `monitoring_script.sh` that implements the tasks 
 
    If you choose "Y," the script will attempt to start Nginx.
 
-5. **Exit**
+**5.Exit**
 
    If you choose option 3, the script will gracefully exit, and the terminal prompt will be returned to you.
 
-6. **Error Handling**
+**6.Error Handling**
 
    In case of any errors, such as invalid input or failed commands, the script will display appropriate error messages. For example:
 
@@ -85,4 +84,5 @@ Assume we have a script called `monitoring_script.sh` that implements the tasks 
 ---
 
 Note: The above example assumes that the script is implemented according to the tasks mentioned in the challenge.
+
 
