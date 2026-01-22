@@ -18,16 +18,17 @@ source_dir="$1"
 # Function to create a timestamped backup folder
 function create_backup {
     local timestamp=$(date '+%Y-%m-%d_%H-%M-%S')  # Get the current timestamp
-    local backup_dir="${source_dir}/backup_${timestamp}"
+    local backup_dir="back_dir/backup_${timestamp}"
 
     # Create the backup folder with the timestamped name
     mkdir "$backup_dir"
     echo "Backup created successfully: $backup_dir"
+    cp -r "${source_dir}"/* "$backup_dir"
 }
 
 # Function to perform the rotation and keep only the last 3 backups
 function perform_rotation {
-    local backups=($(ls -t "${source_dir}/backup_"* 2>/dev/null | awk '{sub(/:$/, "", $0); print}' ))  # List existing backups sorted by timestamp
+    local backups=($(ls -dt back_dir/backup_* 2>/dev/null | awk '{print}'))  # List existing backups sorted by timestamp
 
     # Check if there are more than 3 backups
     if [ "${#backups[@]}" -gt 3 ]; then
