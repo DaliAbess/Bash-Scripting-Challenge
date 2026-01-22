@@ -5,15 +5,15 @@
 
   **1.Launching the Script**
 
-     Open a terminal and navigate to the directory where `monitoring_script.sh` is located. Execute the script using the following command:
+Open a terminal and navigate to the directory where `monitoring_script.sh` is located. Execute the script using the following command:
 
 ```bash
      $ ./monitoring_script.sh
 ```
 
-  **2.Main Menu**
+**2.Main Menu**
 
-     Once the script starts, you'll see a simple menu displayed on the terminal:
+Once the script starts, you'll see a simple menu displayed on the terminal:
 
 ```
      ---- Monitoring Metrics Script ----
@@ -84,5 +84,6 @@
   ---
 
   Note: The above example assumes that the script is implemented according to the tasks mentioned in the challenge.
+
 
 
