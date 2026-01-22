@@ -1,4 +1,4 @@
-description: |
+
   ## Monitoring Metrics Script - User Interaction Example
 
   Assume we have a script called `monitoring_script.sh` that implements the tasks mentioned in the challenge.
@@ -84,3 +84,4 @@ description: |
   ---
 
   Note: The above example assumes that the script is implemented according to the tasks mentioned in the challenge.
+
