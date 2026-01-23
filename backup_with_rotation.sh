@@ -1,7 +1,7 @@
 function backup_rotation {
 backuparray=()
 backuparray=($(ls -t back_dir))
-if ["${#backuparray[@]}"  -gt 3 ];then 
+if [ "${#backuparray[@]}"  -gt 3 ];then 
 for i in "${backuparray[@]:3}" 
 do 
 rm -r "back_dir/$i"
@@ -30,4 +30,4 @@ if [ $# -eq 0 ] || [ ! -d "$1" ]; then
 fi
 create_backup "$1"
 
-
+backup_rotation 
