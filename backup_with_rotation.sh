@@ -1,3 +1,15 @@
+function backup_rotation {
+backuparray=()
+backuparray=($(ls -t back_dir))
+if ["${#backuparray[@]}"  -gt 3 ];then 
+for i in "${backuparray[@]:3}" 
+do 
+rm -r "back_dir/$i"
+echo "backup deleted: back_dir/$i."
+done
+fi
+}
+
 function display_usage {
 echo "the script $0 needs folder name"
 }
@@ -17,4 +29,5 @@ if [ $# -eq 0 ] || [ ! -d "$1" ]; then
     exit 1
 fi
 create_backup "$1"
+
 
