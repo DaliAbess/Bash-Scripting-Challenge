@@ -12,7 +12,7 @@ Write a Bash script that automates the process of analyzing log files and genera
 
 1. **Input:** The script should take the path to the log file as a command-line argument.
 
-2. **Error Count:** Analyze the log file and count the number of error messages. An error message can be identified by a specific keyword (e.g., "ERROR" or "Failed"). Print the total error count.
+2. **Error Count:** Analyze the log file and count the number of error messages. An error message can be identified by a specific keyword (e.g., "ERROR" ). Print the total error count.
 
 3. **Critical Events:** Search for lines containing the keyword "CRITICAL" and print those lines along with the line number.
 
@@ -45,10 +45,11 @@ A sample log file named `sample_log.log` has been provided in the same directory
 2. Write your Bash script to complete the log analyzer and report generator task.
 3. Use the provided `sample_log.log` or create your own log files for testing.
 4. Test your script with various log files and scenarios to ensure accuracy.
-5. Submit your completed script by the end of Day 5 of the 7-day Bash scripting challenge.
+5. Submit your completed script by the end of Day 5 of days Bash scripting challenge.
 
 
 
 Good luck and happy scripting!
 
 ---
+
