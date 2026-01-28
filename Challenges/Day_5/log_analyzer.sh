@@ -25,7 +25,7 @@ error_count=$(grep -c -i "ERROR" "$log_file")
 mapfile -t critical_events < <(grep -n -i "CRITICAL" "$log_file")
 
 # Step 4: Identify the top 5 most common error messages and their occurrence count using associative arrays
-#simple way : grep "ERROR" log_file | cut -d']' -f2 | cut -d'-' -f1 | sort | uniq -c |sort -nr
+#simple way step 4  : sorted_error_messages=$(grep "ERROR" "$log_file" | cut -d']' -f2 | cut -d'-' -f1 | sort | uniq -c |sort -nr )
 declare -A error_messages
 while IFS= read -r line; do
     # Use awk to extract the error message (fields are space-separated)
